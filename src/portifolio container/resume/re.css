@@ -1,0 +1,57 @@
+.accordian .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 3in;
+  width: 12in;
+  box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.6);
+  background-color: transparent;
+}
+
+.accordian .content {
+  display: none; /* Hide content by default */
+  
+}
+
+.accordian input[type='radio']:checked  + .box {
+  display: block; /* Display content when radio is checked */
+  height: 3in;
+  width: 12in;
+}
+
+.accordian input[type='radio']:checked   + label + .content {
+  display: block; /* Display content when radio is checked */
+}
+
+.box > input{
+  display: none;
+}
+.box > label{
+  display: flex;
+  font-weight: 700;
+  font-size: medium;
+  font-family: nexabold;
+  margin-left: -850px;
+  margin-top: 50px;
+}
+.box > label::before{
+  content: '+';
+  font-weight: 700;
+  font-size: medium;
+  font-family: nexabold;
+  margin-right: 20px;
+}
+.hl{
+  list-style: disc;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.hl > li   {
+  margin-right: -280px;
+}
+.ta td {
+  padding: 50px; /* Adjust the padding to create space between td elements */
+}

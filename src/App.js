@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
+import React from 'react';
+import Profile from "./portifolio container/home/profile";
+import Me from './portifolio container/About me/me';
+import Re from './portifolio container/resume/re'
+import Footer from './portifolio container/footer/footer'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <center>
+      <div className="App">
+      <Profile />
+      <Me />
+      <Re />
+      <Footer />
     </div>
+    </center>
+    
   );
 }
 

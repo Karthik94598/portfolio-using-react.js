@@ -1,0 +1,71 @@
+.portifolio-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    min-height: fit-content;
+    color: bisque;
+    margin: 0px;
+    padding: 20px;
+    background-image: url('C:\Users\Lenovo\OneDrive\Desktop\portifoliopro\my-portifolio\src\portifolio container\home\hom.jpg');
+  }
+  
+  .portifoli-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -250px;
+  }
+  
+  #pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background-color: aliceblue;
+    box-shadow: 6px 7px 5px -3px rgb(236, 129, 66);
+    width: 100%; /* Set the width of the container */
+    height: 100%; /* Set the height of the container */
+    object-fit: cover; /* Preserve the aspect ratio and cover the container */
+  }
+  
+  .pic-back {
+    height: 280px;
+    width: 260px;
+    border-radius: 200px;
+    margin-left: -350px;
+    margin-top: 50px;
+  }
+  
+  #pic:hover {
+    border-radius: 200px;
+    background-color: rgb(238, 71, 5);
+    box-shadow: 6px 7px 5px -3px rgb(207, 16, 3);
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .portifolio-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .portofolio-pic {
+      border-radius: 200px;
+      background-color: aliceblue;
+      box-shadow: 6px 7px 5px -3px rgb(236, 129, 66);
+      height: 280px;
+      width: 260px;
+    }
+  
+    .pic-back {
+      height: 280px;
+      width: 260px;
+      border-radius: 200px;
+      margin-top: 50px;
+    }
+  }
+  
